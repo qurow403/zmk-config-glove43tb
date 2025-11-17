@@ -1,3 +1,5 @@
+# test build
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 #include <behaviors.dtsi>
