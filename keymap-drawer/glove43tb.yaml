@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - Gui+Sft+S
+  - Gui+Sft+KC S
   - '-'
   - H
   - J
@@ -104,7 +104,7 @@ layers:
   - KP 5
   - KP 6
   - '*'
-  - Ctl+Alt+KP 0
+  - Ctl+Alt+KC KP 0
   - _
   - '!'
   - '@'
@@ -134,7 +134,7 @@ layers:
   - '|'
   ARROW:
   - ESCAPE
-  - Ctl+Sft+TAB
+  - Ctl+Sft+KC TAB
   - UP ARROW
   - Ctl+TAB
   - {t: ▽, type: trans}
@@ -156,9 +156,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
+  - Gui+Sft+KC LEFT
   - {t: ▽, type: trans}
-  - Gui+Sft+RIGHT ARROW
+  - Gui+Sft+KC RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
