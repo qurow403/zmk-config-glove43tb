@@ -80,41 +80,28 @@
     };
 
     behaviors {
-    lt_to_layer_0: lt_to_layer_0 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LAYER_TAP_TO_0";
-        bindings = <&mo>, <&to_layer_0>;
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-    };
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
 
-    switch_to_en: switch_to_en {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        label = "SwitchToEN";
-        bindings = <&kp J &kp LC &kp LS>; // Ctrl + Shift + J
-    };
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
 
-    switch_to_ja: switch_to_ja {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        label = "SwitchToJA";
-        bindings = <&kp K &kp LC &kp LS>; // Ctrl + Shift + K
-    };
+        sensor_rotate_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
 
-    sensor_rotate_kp: sensor_rotate_kp {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
+        mouse_wheel_scroll: mouse_wheel_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
+        };
     };
-
-    mouse_wheel_scroll: mouse_wheel_scroll {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = <&msc>, <&msc>;
-        tap-ms = <20>;
-    };
-};
 
     keymap {
         compatible = "zmk,keymap";
